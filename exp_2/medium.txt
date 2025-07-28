@@ -40,9 +40,9 @@ VALUES
 (7, 2020),
 (13, 2019);
 
-select [y1.ID](http://y1.id/) , y1.Year, isnull (y2.NPV, 0)
+select y1.ID , y1.Year, isnull (y2.NPV, 0)
 from Queries as y1
 left outer join
 Year_tbl as y2
 on
-y1.id= [y2.id](http://y2.id/) and y1.YEAR= y2.YEAR
+y1.id= y2.id and y1.YEAR= y2.YEAR

@@ -29,7 +29,7 @@ values
 (5, 'eve', 'IT', 3),
 (6, 'Frank', 'HR', 1);
 
-select  [e1.name](http://e1.name/) as [employee_ Name] ,[e2.name](http://e2.name/) as[manager_name] ,
+select  e1.name as [employee_ Name] ,e2.name as[manager_name] ,
 e1.department as[employee_depart] , e2.department as[manager_departemnt]
 from employee as e1
 left outer join
