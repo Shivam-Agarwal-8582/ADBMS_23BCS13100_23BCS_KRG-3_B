@@ -1,16 +1,16 @@
-Write an SQL query using a self join to:
+-- Write an SQL query using a self join to:
 
-Select the employee's name, aliased as employee_name
+-- Select the employee's name, aliased as employee_name
 
-Select the manager's name, aliased as manager_name
+-- Select the manager's name, aliased as manager_name
 
-Select the employee's department, aliased as employee_department
+-- Select the employee's department, aliased as employee_department
 
-Select the manager's department, aliased as manager_department
+-- Select the manager's department, aliased as manager_department
 
-Include all employees, even if they do not have a manager
+-- Include all employees, even if they do not have a manager
 
-Use a LEFT OUTER JOIN between the employee table and itself, with the correct join condition.
+-- Use a LEFT OUTER JOIN between the employee table and itself, with the correct join condition.
 
 create table employee(
 e_id int primary key,

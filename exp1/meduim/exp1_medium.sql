@@ -1,16 +1,16 @@
-Medium-Level Problem
-Problem Title: Department-Course Subquery and Access Control
-Procedure (Step-by-Step):
+-- Medium-Level Problem
+-- Problem Title: Department-Course Subquery and Access Control
+-- Procedure (Step-by-Step):
 
-Design normalized tables for departments and the courses they offer, maintaining a foreign key relationship.
+-- Design normalized tables for departments and the courses they offer, maintaining a foreign key relationship.
 
-Insert five departments and at least ten courses across those departments.
+-- Insert five departments and at least ten courses across those departments.
 
-Use a subquery to count the number of courses under each department.
+-- Use a subquery to count the number of courses under each department.
 
-Filter and retrieve only those departments that offer more than two courses.
+-- Filter and retrieve only those departments that offer more than two courses.
 
-Grant SELECT-only access on the courses table to a specific user.
+-- Grant SELECT-only access on the courses table to a specific user.
 
 create table department (
     d_id int primary key,
@@ -44,7 +44,7 @@ INSERT INTO course (c_id, c_name, d_id) VALUES
 (110, 'World War II', 5);
 
 
-Use a subquery to count the number of courses under each department.
+-- Use a subquery to count the number of courses under each department.
 
 select * from department
 where d_id in
@@ -56,4 +56,3 @@ where d_id in
 
 
 grant select on course to readOnly_User;
-
